@@ -40,7 +40,7 @@ The environment uses internal DNS records to route service names to a centralize
 - pfSense firewall and VLAN segmentation for network control
 
 ### Request Flow
-```text
+
 Client Device
     ↓
 Internal DNS Resolution
@@ -48,7 +48,7 @@ Internal DNS Resolution
 Reverse Proxy
     ↓
 Backend Service
-```
+
 ## Security Considerations
 - Services are intended for internal-only access
 - Backend service ports are not directly exposed externally
