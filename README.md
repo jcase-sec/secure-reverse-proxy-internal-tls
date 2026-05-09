@@ -51,7 +51,7 @@ Backend Service
 
 ## Reverse Proxy Overview
 
-![Nginx Proxy Manager Overview](images/NPM-proxy(1).png)
+![Nginx Proxy Manager Overview](images/NPM-proxy.png)
 
 - Sanitized Nginx Proxy Manager interface demonstrating centralized internal service routing, TLS certificate usage, and reverse proxy management across self-hosted services.
 
