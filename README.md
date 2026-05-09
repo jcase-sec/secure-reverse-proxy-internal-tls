@@ -41,8 +41,6 @@ The environment uses internal DNS records to route service names to a centralize
 
 ### Request Flow
 
-### Request Flow
-
 Client Device  
 ↓  
 Internal DNS Resolution  
@@ -50,6 +48,12 @@ Internal DNS Resolution
 Reverse Proxy  
 ↓  
 Backend Service
+
+## Reverse Proxy Overview
+
+![Nginx Proxy Manager Overview](images/NPM-proxy(1).png)
+
+- Sanitized Nginx Proxy Manager interface demonstrating centralized internal service routing, TLS certificate usage, and reverse proxy management across self-hosted services.
 
 ## Security Considerations
 - Services are intended for internal-only access
