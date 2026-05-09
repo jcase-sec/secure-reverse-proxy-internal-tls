@@ -48,7 +48,28 @@ Internal DNS Resolution
 Reverse Proxy
     ↓
 Backend Service
-...
+```
+## Security Considerations
+- Services are intended for internal-only access
+- Backend service ports are not directly exposed externally
+- TLS is terminated at the reverse proxy
+- Internal certificate trust is managed through a private CA
+- VLAN segmentation supports service isolation
+- Sensitive values, real hostnames, IP addresses, certificates, and private keys are excluded from this repository
 
-##Security Considerations
-...
+## Lessons Learned
+- Reverse proxies simplify access management across multiple internal services
+- Internal DNS and TLS improve usability without requiring public exposure
+- Certificate trust must be managed carefully across different client devices
+- TLS termination centralizes certificate handling but requires secure proxy configuration
+- Internal-only services still benefit from encryption, access control, and clean architecture
+
+## Current Focus
+- Maintaining clean internal service routing
+- Expanding certificate trust across trusted devices
+- Improving service organization and documentation
+- Reducing unnecessary direct access to backend services
+
+## Repository Notice
+
+This repository is a sanitized documentation project. It intentionally excludes real domains, internal DNS names, IP addresses, credentials, API keys, certificates, private keys, and environment-specific configuration.
