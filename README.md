@@ -41,15 +41,14 @@ The environment uses internal DNS records to route service names to a centralize
 
 ### Request Flow
 
-Client Device
+### Request Flow
 
-    ↓
-Internal DNS Resolution
-
-    ↓
-Reverse Proxy
-
-    ↓
+Client Device  
+↓  
+Internal DNS Resolution  
+↓  
+Reverse Proxy  
+↓  
 Backend Service
 
 ## Security Considerations
